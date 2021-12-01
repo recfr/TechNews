@@ -1,4 +1,4 @@
-package com.recep.technologienews
+package com.recep.technologynews
 
 import org.junit.Test
 
