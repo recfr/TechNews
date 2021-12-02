@@ -12,7 +12,6 @@ class NewsViewHolder(
 ) : RecyclerView.ViewHolder(binding.root) {
 
     init {
-
         itemView.setOnClickListener{
             navigateToDetails(model)
         }
