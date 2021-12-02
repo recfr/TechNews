@@ -1,12 +1,15 @@
 package com.recep.technologynews.recyclerview
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.recep.technologynews.databinding.AdapterItemNewsPosterBinding
 import com.recep.technologynews.model.NewsModel
+import com.recep.technologynews.ui.HomeFragmentDirections
 
 class NewsAdapter(private val newsList: List<NewsModel>) : RecyclerView.Adapter<NewsViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = AdapterItemNewsPosterBinding.inflate(inflater, parent, false)

@@ -2,4 +2,6 @@
     <string name="app_name">Tech News</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings_fragment_text">settings_fragment_text</string>
+    <string name="details">Details</string>
 </resources>
