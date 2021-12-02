@@ -19,11 +19,11 @@
             android:id="@+id/news_image_view"
             android:layout_width="350dp"
             android:layout_height="200dp"
-            android:src="@{news.image}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@color/purple_500" />
+            app:thumbnail="@{news.media}"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
         <TextView
             android:id="@+id/news_title_text_view"
@@ -53,6 +53,17 @@
             app:layout_constraintStart_toStartOf="@id/news_title_text_view"
             app:layout_constraintTop_toBottomOf="@id/news_title_text_view"
             tools:text="Detail" />
+
+        <View
+            android:alpha=".2"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/news_detail_text_view" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

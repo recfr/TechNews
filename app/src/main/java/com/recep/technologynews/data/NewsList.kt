@@ -29,7 +29,7 @@ object NewsList {
                     "Önümüzdeki yıllarda toplamda 10 milyar dolar yatırımla hareket edecek olan Xiaomi Motors’un hedefleri büyük. " +
                     "Özellikle uzak doğu pazarında sevilen üreticinin elektrikli otomobillerle nasıl bir izlenim kazanacağını " +
                     "da merak ediyoruz. Sizler Xiaomi M1 tasarımını nasıl buldunuz?\n",
-            image = R.drawable.xiaomi_car_image
+            media = R.drawable.xiaomi_car_image
         )
 
         val newsSmartPhone = NewsModel(
@@ -53,7 +53,7 @@ object NewsList {
                     "atmasını isterken üreticiler ise bu isteklerin aşırıya kaçtığını söylüyor. Apple, Samsung, " +
                     "Google ve Huawei gibi önemli üreticileri temsil eden DigitalEurope, 3 yıl güvenlik güncellemesi " +
                     "verilmesi gerektiğini savunuyor.\n",
-            image = R.drawable.phone_parts_image
+            media = R.drawable.phone_parts_image
         )
 
         val newsGoogle = NewsModel(
@@ -79,7 +79,7 @@ object NewsList {
                     "bekleyebileceği değişikliği otomatik olarak analiz edecek ve önemli bir pazardaki herhangi bir cihaz " +
                     "türünde 0,2 yıldızın üzerinde bir değişiklik görüldüğünde geliştiriciye ulaşacak. Bu da uygulamasında önemli " +
                     "değişiklikler yapmak isteyip istemediğini planlaması için geliştiriciye zaman tanıyacak.\n",
-            image = R.drawable.playstore_image
+            media = R.drawable.playstore_image
         )
 
 
@@ -101,7 +101,7 @@ object NewsList {
                     "SADECE 3.2 SANİYEDE SIFIRDAN 100’E\n" +
                     "CUPRA UrbanRebel Konsept, sürekli olarak 250kW maksimumda ise 320kW güç üretebilen motora sahip." +
                     " Otomobil sıfırdan saatte 100 kilometre hıza yalnızca 3.2 saniyede çıkabiliyor.\n",
-            image = R.drawable.cupra_car_image
+            media = R.drawable.cupra_car_image
         )
 
         newsList.add(newsCar)
@@ -113,10 +113,6 @@ object NewsList {
         newsList.add(newsSmartPhone)
         newsList.add(newsXiaomi)
         newsList.add(newsCar)
-        newsList.add(newsGoogle)
-        newsList.add(newsSmartPhone)
-        newsList.add(newsXiaomi)
-
 
         return newsList
     }

@@ -5,6 +5,6 @@ import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 
 @BindingAdapter("thumbnail")
-fun bindThumbnails(view: ImageView, media: String) {
-    Glide.with(view.context).load(media).into(view)
+fun bindThumbnails(view: ImageView, mediaResource: Int) {
+    view.setImageResource(mediaResource)
 }

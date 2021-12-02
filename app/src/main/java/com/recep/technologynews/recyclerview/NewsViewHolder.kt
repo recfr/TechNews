@@ -1,7 +1,6 @@
 package com.recep.technologynews.recyclerview
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
@@ -22,10 +21,10 @@ class NewsViewHolder(
     }
 
     private fun navigateToDetails(model: List<NewsModel>, itemView: View) {
-        Log.i("itemClick", model[adapterPosition].title)
-
         val bundle = Bundle()
         bundle.putString("title", model[adapterPosition].title)
+        bundle.putString("detail", model[adapterPosition].detail)
+        bundle.putInt("media", model[adapterPosition].media)
 
         itemView.findNavController().navigate(R.id.action_homeFragment_to_detailFragment, bundle)
     }
@@ -33,8 +32,4 @@ class NewsViewHolder(
     fun bind(new: NewsModel) {
         binding.news = new
     }
-
-
-
-
 }

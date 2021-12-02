@@ -3,7 +3,7 @@ package com.recep.technologynews.model
 data class NewsModel(
     val title: String,
     val detail: String,
-    val image: Int
+    val media: Int
 )
 
 data class NewsExtra(
