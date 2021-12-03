@@ -12,4 +12,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
     }
+
+    //TODO (' Safe Args ')
+    //TODO (' Bottom Bar ')
+    //TODO (' Navigation Drawer ')
+    //TODO (' Toolbar, menu item ')
+    //TODO (' List widget click event --> deepLink')
 }
