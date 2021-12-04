@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    //TODO (' Safe Args ')
     //TODO (' Bottom Bar ')
     //TODO (' Navigation Drawer ')
     //TODO (' Toolbar, menu item ')

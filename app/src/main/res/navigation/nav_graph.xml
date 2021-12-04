@@ -31,7 +31,7 @@
             android:name="argument_detail"
             app:argType="string" />
         <argument
-            android:name="argument_image"
+            android:name="argument_media"
             app:argType="integer" />
     </fragment>
     <fragment
