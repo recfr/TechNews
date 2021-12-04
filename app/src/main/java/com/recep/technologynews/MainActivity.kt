@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
 
 
     //Done (' Bottom Bar ')
-    //TODO (' Navigation Drawer ')
+    //Done (' Navigation Drawer ')
     //Done (' Toolbar, menu item ')
     //TODO (' List widget click event --> deepLink')
 }
