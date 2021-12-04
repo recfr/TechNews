@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.recep.technologynews.ui.HomeFragment"
-        android:label="fragment_home"
+        android:label="Tech News"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_detailFragment"
@@ -22,7 +22,7 @@
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.recep.technologynews.ui.DetailFragment"
-        android:label="fragment_detail"
+        android:label="Details"
         tools:layout="@layout/fragment_detail" >
         <argument
             android:name="argument_title"
@@ -37,11 +37,22 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.recep.technologynews.ui.SettingsFragment"
-        android:label="fragment_settings"
+        android:label="Settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/deepLinkFragment"
         android:name="com.recep.technologynews.ui.DeepLinkFragment"
         android:label="fragment_deep_link"
         tools:layout="@layout/fragment_deep_link" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.recep.technologynews.ui.AboutFragment"
+        android:label="About" />
+    <action
+        android:id="@+id/action_global_aboutFragment"
+        app:destination="@id/aboutFragment"
+        app:enterAnim="@anim/slide_in_top"
+        app:exitAnim="@anim/slide_out_bottom"
+        app:popEnterAnim="@anim/slide_in_bottom"
+        app:popExitAnim="@anim/slide_out_top" />
 </navigation>

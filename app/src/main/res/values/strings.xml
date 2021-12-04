@@ -5,4 +5,8 @@
     <string name="settings_fragment_text">settings_fragment_text</string>
     <string name="details">Details</string>
     <string name="media_thumbnail">media_thumbnail</string>
+    <string name="settings">Settings</string>
+    <string name="settings_page_info">This is a settings page.</string>
+    <string name="about_page_info">This is a global about page.</string>
+    <string name="this_is_a_search_fragment">This is a search fragment.</string>
 </resources>

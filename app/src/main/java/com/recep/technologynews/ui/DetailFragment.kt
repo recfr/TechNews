@@ -20,6 +20,7 @@ class DetailFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // safeArgs has to initialize in onCreate method.
         title = DetailFragmentArgs.fromBundle(requireArguments()).argumentTitle
         detail = DetailFragmentArgs.fromBundle(requireArguments()).argumentDetail
         media = DetailFragmentArgs.fromBundle(requireArguments()).argumentMedia
