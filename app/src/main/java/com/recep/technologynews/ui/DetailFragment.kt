@@ -37,6 +37,7 @@ class DetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         binding.textViewTitleDetailsFragment.text = title
         binding.textViewDetailsDetailsFragment.text = detail
         media.let { binding.imageViewDetailsFragment.setImageResource(it) }

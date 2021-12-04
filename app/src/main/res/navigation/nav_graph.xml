@@ -60,4 +60,9 @@
         android:name="com.recep.technologynews.ui.SearchFragment"
         android:label="Search"
         tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/personalFragment"
+        android:name="com.recep.technologynews.ui.PersonalFragment"
+        android:label="Personal Info"
+        tools:layout="@layout/fragment_personal" />
 </navigation>

@@ -11,4 +11,18 @@
     <string name="this_is_a_search_fragment">This is a search fragment.</string>
     <string name="home">Home</string>
     <string name="search">Search</string>
+    <string name="about">About</string>
+    <string name="about_me">About me</string>
+    <string name="personal_info_page">This is a personal info page.</string>
+    <string name="personal_info">I am an electronics engineer who really loves coding.</string>
+    <string name="personal">Personal</string>
+    <string name="github">GitHub</string>
+
+    <!-- Hyperlink -->
+    <string name="hyperlink_github"> <a href="https://github.com/recfr/">GitHub</a></string>
+    <string name="hyperlink_medium"> <a href="https://recepfirincioglu.medium.com">Medium</a></string>
+    <string name="hyperlink_linkedin"> <a href="https://www.linkedin.com/in/recepfirincioglu/">LinkedIn</a></string>
+    <string name="avatar">avatar</string>
+
+
 </resources>
