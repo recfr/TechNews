@@ -55,4 +55,9 @@
         app:exitAnim="@anim/slide_out_bottom"
         app:popEnterAnim="@anim/slide_in_bottom"
         app:popExitAnim="@anim/slide_out_top" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.recep.technologynews.ui.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
 </navigation>
