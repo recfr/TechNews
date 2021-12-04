@@ -5,16 +5,13 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.databinding.DataBindingUtil
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.onNavDestinationSelected
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import androidx.navigation.ui.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.recep.technologynews.databinding.ActivityMainBinding
+import com.google.android.material.navigation.NavigationView
 
 
 class MainActivity : AppCompatActivity() {
@@ -35,10 +32,15 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.findNavController()
 
         /**
+         * This value use for put the hamburger menu icon of drawer layout  to toolbar.
+         */
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+
+        /**
          * Setting up the top level destinations to prevent to availability of back button's in this pages.
          */
         appBarConfiguration = AppBarConfiguration(
-            setOf(R.id.homeFragment, R.id.searchFragment)
+            setOf(R.id.homeFragment, R.id.searchFragment), drawerLayout
         )
 
         val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
@@ -48,11 +50,13 @@ class MainActivity : AppCompatActivity() {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav)
         bottomNav.setupWithNavController(navController)
 
+        val navView = findViewById<NavigationView>(R.id.nav_view)
+        navView.setupWithNavController(navController)
 
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp() or super.onSupportNavigateUp()
+        return navController.navigateUp(appBarConfiguration) or super.onSupportNavigateUp()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -73,7 +77,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    //TODO (' Bottom Bar ')
+    //Done (' Bottom Bar ')
     //TODO (' Navigation Drawer ')
     //Done (' Toolbar, menu item ')
     //TODO (' List widget click event --> deepLink')
