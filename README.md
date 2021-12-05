@@ -10,4 +10,4 @@ JediDroids App Challenge
 - [Setting up AppBar](https://developer.android.com/training/appbar/setting-up)
 - [Toolbar documentation](https://developer.android.com/reference/android/widget/Toolbar)
 
-![figma_export_newsapp](https://user-images.githubusercontent.com/58929094/144727520-5cf0c834-8631-4a4f-9e25-880fc2115034.png)
+![figma_export](https://user-images.githubusercontent.com/58929094/144761032-557b8b23-13ec-4ad8-83d5-e1f82315d4b8.png)
